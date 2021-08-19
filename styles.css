@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  /* color: initial; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:focus {
+  text-decoration: underline;
+  color: initial;
+}
+
+/* Começo do Header */
+header {
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+header nav svg {
+  width: 24px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  fill: #5f6368;
+}
+header nav svg:hover {
+  border: solid 8px #dadce0;
+  background-color: #dadce0;
+  padding: 0;
+}
+/* Fim do Header */
+
+/* Começo do CricleAvatar */
+.circle {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  cursor: pointer;
+  margin: 4px;
+
+  /* Personalizar texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.circle:hover {
+  border: solid 4px #dadce0;
+  margin: 0;
+}
+/* Fim do CricleAvatar */
+
+/* Começo do Footer */
+footer {
+  /* Pra funcionar posicionamento igual do google - Fazer depois de terminar a section */
+  margin-top: auto;
+  /*  */
+
+  background-color: #dadce049;
+  display: flex;
+  flex-direction: column;
+}
+
+footer span {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav div {
+  display: flex;
+  padding: 0 20px;
+}
+
+footer nav div a {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 15px;
+}
+footer nav div a:focus {
+  color: rgba(0, 0, 0, 0.54);
+}
+/* Fim do Footer */
+
+/* Começo do da section */
+section {
+  display: flex;
+  justify-content: center;
+  height: 65%;
+}
+
+section div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  /*  */
+  flex-grow: 1;
+  max-width: 584px;
+  margin: 0 30px;
+}
+
+section input {
+  width: 100%;
+  height: 24px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.div-input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadce0;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+.div-input svg {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  fill: #5f6368;
+}
+
+section span {
+  font-size: small;
+}
+section span a {
+  color: init;
+}
+/* Fim da Section */
+
+/* Começo do Button */
+button {
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  min-width: 54px;
+  font-size: 14px;
+  color: #3c4043;
+  margin: 0 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  border: 1px solid #dadce0;
+}
+/* Fim do Button */
+
+@media (max-width: 719px) {
+  footer {
+    display: none;
+  }
+}
